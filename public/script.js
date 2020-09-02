@@ -1,7 +1,6 @@
 const socket = io('/')
 const videoGrid = document.getElementById('video-grid')
 const myPeer = new Peer(undefined, {
-  key: '123123123',
   debug: 3
 })
 const myVideo = document.createElement('video')
