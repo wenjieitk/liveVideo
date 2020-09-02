@@ -1,6 +1,9 @@
 const socket = io('/')
 const videoGrid = document.getElementById('video-grid')
-const myPeer = new Peer()
+const myPeer = new Peer({
+  host: process.env.HOST,
+  debug: 3
+})
 const myVideo = document.createElement('video')
 myVideo.muted = true
 const peers = {}
